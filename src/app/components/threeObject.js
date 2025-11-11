@@ -54,11 +54,13 @@ export default function ThreeObject() {
     /**
      * ライトの作成
      */
+    const ambientLight = new THREE.AmbientLight(0xffffff);
     const directionalLight = new THREE.DirectionalLight(0xffffff);
+    ambientLight.intensity = 0.5;
     directionalLight.intensity = 4;
     directionalLight.position.set(1, 1, 1);
 
-    scene.add(directionalLight);
+    scene.add(ambientLight, directionalLight);
 
     /**
      * アニメーション
