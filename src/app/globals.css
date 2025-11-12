@@ -3,4 +3,17 @@
 * {
   margin: 0;
   padding: 0;
+  overflow: hidden;
+}
+
+body {
+  font-size: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }

@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+.nav {
+  font-size: 1.8rem;
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav a {
+  color: #fff;
+}
