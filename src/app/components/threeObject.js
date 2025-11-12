@@ -43,7 +43,7 @@ export default function ThreeObject() {
     /**
      * オブジェクトの作成
      */
-    const boxGeometry = new THREE.BoxGeometry(250, 250, 250);
+    const boxGeometry = new THREE.BoxGeometry(225, 225, 225);
     const material = new THREE.MeshStandardMaterial({
       color: 0xffffff,
     });
@@ -61,6 +61,18 @@ export default function ThreeObject() {
     directionalLight.position.set(1, 1, 1);
 
     scene.add(ambientLight, directionalLight);
+
+    // ブラウザのリサイズに対応
+    function onWindowResize() {
+      sizes.width = window.innerWidth;
+      sizes.height = window.innerHeight;
+
+      renderer.setSize(sizes.width, sizes.height);
+      camera.aspect = sizes.width / sizes.height;
+      camera.updateProjectionMatrix();
+    }
+
+    window.addEventListener("resize", onWindowResize);
 
     /**
      * アニメーション
