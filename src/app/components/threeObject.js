@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
 // three.jsオブジェクトのcanvasコンポーネント
 export default function ThreeObject() {
@@ -73,6 +74,11 @@ export default function ThreeObject() {
     }
 
     window.addEventListener("resize", onWindowResize);
+
+    // マウス操作の実装
+    const controls = new OrbitControls(camera, renderer.domElement);
+
+    controls.enableZoom = false;
 
     /**
      * アニメーション
