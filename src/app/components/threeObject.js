@@ -78,15 +78,23 @@ export default function ThreeObject() {
     // マウス操作の実装
     const controls = new OrbitControls(camera, renderer.domElement);
 
-    controls.enableZoom = false;
+    controls.rotateSpeed = 4;
 
+    // カメラ拡大/縮小の上限を設定
+    controls.minDistance = 550;
+    controls.maxDistance = 5000;
+
+    // 慣性の実装
+    controls.enableDamping = true;
+    
     /**
      * アニメーション
-     */
-    tick();
-
-    function tick() {
-      requestAnimationFrame(tick);
+    */
+   tick();
+   
+   function tick() {
+     requestAnimationFrame(tick);
+     controls.update();
 
       box.rotation.x += 0.01;
       box.rotation.y += 0.01;

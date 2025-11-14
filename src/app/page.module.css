@@ -1,5 +1,15 @@
 @charset "utf-8";
 
+.h1 {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+}
+
+.h1 .logo {
+  width: 40px;
+}
+
 .nav {
   font-size: 1.8rem;
   text-align: right;
@@ -16,5 +26,20 @@
 }
 
 .nav a {
-  color: #fff;
+  overflow: hidden;
+  color: transparent;
+  text-shadow: 0 -1.5em 0 #fff, 0 0 0 #fff;
 }
+
+.nav a:hover {
+  animation: navText 0.3s forwards ease-in-out;
+}
+
+  @keyframes navText {
+    0% {
+      text-shadow: 0 -1.5em 0 #fff, 0 0 0 #fff;
+    }
+    100% {
+      text-shadow: 0 0 0 #fff, 0 1.5em 0 #fff;
+    }
+  }
