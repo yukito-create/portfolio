@@ -6,11 +6,11 @@ import { montserrat } from "./layout.js";
 export default function Home() {
   return (
     <>
-      <h1 className={styles.h1}>
+      {/* <h1 className={styles.h1}>
         <Link href={"/"}>
           <img className={styles.logo} src={"/logo.png"} />
         </Link>
-      </h1>
+      </h1> */}
       <ThreeObject />
       <nav className={styles.nav}>
         <ul>

@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  overflow: hidden;
   box-sizing: border-box;
 }
 
@@ -27,4 +26,14 @@ a {
 
 .justify {
   text-align: justify;
+}
+
+h1 {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+}
+
+h1 .logo {
+  width: 40px;
 }
