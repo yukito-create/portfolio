@@ -11,7 +11,7 @@
 }
 
 .nav {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   text-align: right;
   position: absolute;
   top: 50%;
@@ -22,7 +22,7 @@
 .nav ul {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .nav a {
@@ -32,7 +32,7 @@
 }
 
 .nav a:hover {
-  animation: navText 0.3s forwards ease-in-out;
+  animation: navText 0.25s forwards ease-in-out;
 }
 
   @keyframes navText {

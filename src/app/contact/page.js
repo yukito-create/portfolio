@@ -1,8 +1,7 @@
-export default function ABOUT() {
+export default function CONTACT() {
   const preparation = {
-    color: "#fff",
     fontSize: "3rem",
-    backgroundColor: "#000",
+    fontWeight: "bold",
     minHeight: "100vh",
     display: "flex",
     justifyContent: "center",

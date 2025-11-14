@@ -4,10 +4,17 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 body {
   font-size: 10px;
+  background: #000;
+  color: #fff;
+}
+
+p {
+  line-height: 1.7;
 }
 
 li {
@@ -16,4 +23,8 @@ li {
 
 a {
   text-decoration: none;
+}
+
+.justify {
+  text-align: justify;
 }
