@@ -1,4 +1,4 @@
-import styles from "./page.module.css";
+import styles from "./about.module.css";
 import { montserrat } from "../layout.js";
 
 export default function ABOUT() {

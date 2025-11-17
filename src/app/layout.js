@@ -1,5 +1,6 @@
 import "./globals.css";
 import Link from "next/link";
+import Image from "next/image";
 import { Montserrat } from "next/font/google";
 
 export const montserrat = Montserrat({ weight: ["700"] });
@@ -15,7 +16,7 @@ export default function RootLayout({ children }) {
       <body>
         <h1>
           <Link href={"/"}>
-            <img className={"logo"} src={"/logo.png"} />
+            <Image src="/logo.png" width={40} height={40} alt="ポートフォリオです。" />
           </Link>
         </h1>
         {children}
