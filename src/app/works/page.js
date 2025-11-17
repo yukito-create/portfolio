@@ -12,7 +12,7 @@ export default function WORKS() {
           <div className={styles.border}></div>
           <div className={styles.gridContainer}>
             <div className={styles.gridItem}>
-              <Link href={"/"}></Link>
+              <Link href={"/works/demo/parallax"}></Link>
             </div>
             <div className={styles.gridItem}>
               <Link href={"/"}></Link>

@@ -1,6 +1,4 @@
-import Preparation from "../components/preparation";
-
-export default function BLOG() {
+export default function Preparation() {
   const preparation = {
     fontSize: "3rem",
     fontWeight: "bold",
@@ -12,7 +10,7 @@ export default function BLOG() {
 
   return (
     <>
-      <Preparation />
+      <div style={preparation}>準備中です😃</div>
     </>
   );
 }
